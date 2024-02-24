@@ -50,7 +50,6 @@ export default function Token() {
         const lamports = await getMinimumBalanceForRentExemptMint(connection);
         const mintKeypair = Keypair.generate();
         const tokenATA = await getAssociatedTokenAddress(mintKeypair.publicKey, publicKey);
-        console.log("tokenATA ===> ", tokenATA);
 
         const createMetadataInstruction = createCreateMetadataAccountV3Instruction(
           {
