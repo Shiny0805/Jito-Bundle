@@ -1,0 +1,33 @@
+html,
+body {
+  // Fix spacing
+  margin: 0px;
+  padding: 0px;
+
+  // Font
+  font-feature-settings: "ss01";
+  text-rendering: optimizeLegibility;
+  font-family: "Inter", sans-serif;
+
+  // Background
+  background-color: #121212;
+}
+
+// Override default link styles
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #556bd2 !important;
+  padding: 0.5rem 1rem !important;
+  height: 32px !important;
+  &:hover {
+    background-color: #738bf8 !important;
+  }
+}
