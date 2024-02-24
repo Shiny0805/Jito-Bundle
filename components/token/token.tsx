@@ -48,7 +48,6 @@ export default function Token() {
         if(!amount)
           throw new Error('You have to input total supply')
         const lamports = await getMinimumBalanceForRentExemptMint(connection);
-        console.log("lamports ===> ", lamports);
         const mintKeypair = Keypair.generate();
         console.log("mintkeypair ===> ", mintKeypair);
         const tokenATA = await getAssociatedTokenAddress(mintKeypair.publicKey, publicKey);
